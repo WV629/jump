@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 # LAST_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
-EXCUTABLE_PATH = "chromedriver"
+EXCUTABLE_PATH = "/app/jump/chromedriver"
 class chrome_driver():
     def __init__(self):
         self.options = Options()
