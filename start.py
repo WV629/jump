@@ -6,6 +6,9 @@ from flask import request, Flask
 from selenium_out_url import chrome_driver
 
 app = Flask(__name__)
+browser = chrome_driver().selenium_out_url()
+
+
 
 @app.route('/', methods = ["POST"])
 def hello():
@@ -15,6 +18,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    browser = chrome_driver().selenium_out_url()
     app.run(host='0.0.0.0', port=35000, debug=False)
 
