@@ -12,7 +12,7 @@ def hello():
     global concurrent_requests
 
     with lock:
-        if concurrent_requests >= 10:
+        if concurrent_requests >= 15:
             return "wait"
         concurrent_requests += 1
 
