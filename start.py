@@ -19,7 +19,7 @@ def hello():
     browser = chrome_driver().selenium_out_url()
     url = request.form.get("url")
     out_utl = slenium_chrome(url, browser)
-
+    browser.quit()
     with lock:
         concurrent_requests -= 1
 
